@@ -1,0 +1,14 @@
+@keyframes text-gradient {
+    to {
+        background-position: 1200% 0;
+    }
+}
+
+@keyframes profile-border {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,6 +1,7 @@
 /* FONTS */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('animation.css');
 
 /* GENERAL STYLING */
 
@@ -180,6 +181,18 @@ nav {
     height: 400px;
     width: 400px;
     margin: auto 0;
+    padding: 20px;
+    border: dimgray 2px;
+    border-style: dashed;
+    border-radius: 100%;
+    transition: all 0.5s ease-out;
+    /* animation: profile-border 10s linear infinite; */
+}
+
+
+.section__pic-container:hover {
+    width: 450px;
+    height: 450px;
 }
 
 .section__text {
@@ -210,9 +223,19 @@ nav {
     font-size: 5rem;
     font-weight: 1000;
     text-align: center;
-    background: -webkit-linear-gradient(90deg, rgba(40, 40, 242, 0.994), cornflowerblue);
+    background: -webkit-linear-gradient(0deg, #F43545, #FA8901, #FAD717, #00BA71, #00C2DE, #00418D, #5F2879
+                                            , #00418D, #00C2DE, #00BA71, #FAD717, #FA8901, #F43545);
+    background-size: 1200%;
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
+    animation: text-gradient 45s linear infinite;
+    transition: all 0.5s ease-out;
+}
+
+.title:hover {
+    letter-spacing: .5rem;
+    cursor: default;
 }
 
 /* BUTTON */
