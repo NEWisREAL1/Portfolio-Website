@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
 }
 
 p {
@@ -28,11 +28,25 @@ section {
     margin: 0;
     padding: 0 10rem;
     box-sizing: border-box;
-    min-height: fit-content; 
+    min-height: fit-content;
 }
 
 .section-container {
     display: flex;
+    width: auto;
+}
+
+.section__heading {
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 100%;
 }
 
 /* PAGE TRANSITION EFFECT */
@@ -176,21 +190,21 @@ nav {
     border-radius: 100%;
 }
 
-.section__pic-container {
+.hero__pic-container {
     display: flex;
     height: 400px;
     width: 400px;
     margin: auto 0;
     padding: 20px;
-    border: dimgray 2px;
-    border-style: dashed;
+    border: cornflowerblue 5px;
+    border-style: dotted;
     border-radius: 100%;
     transition: all 0.5s ease-out;
     /* animation: profile-border 10s linear infinite; */
 }
 
 
-.section__pic-container:hover {
+.hero__pic-container:hover {
     width: 450px;
     height: 450px;
 }
@@ -273,4 +287,142 @@ nav {
     background-color: cornflowerblue;
     border-color: cornflowerblue;
     color: white;
+}
+
+/* ABOUT SECTION */
+
+#about {
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 101vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pic-container__chibi-icon {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    margin: auto 0;
+    padding: 10px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.chibi-img {
+    display: block;
+    border-radius: 100%;
+}
+
+.about-detail-container {
+    padding: 5rem;
+}
+
+.about-container {
+    padding-bottom: 0.5rem;
+}
+
+.about-container .section__text__p1 {
+    color: black;
+    text-align: left;
+}
+
+.about-container .section__text__p2 {
+    color: white;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.interested-field-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.interested-field {
+    display: flex;
+}
+
+.check-mark {
+    width: 1.25rem;
+    height: 1.25rem;
+    display: inline-block;
+    filter: invert(100%);
+    align-self: center;
+}
+
+.section__text__list {
+    display: inline-block;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-left: 0.75rem;
+}
+
+/* EDUCATION SECTION */
+
+#education {
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+
+.section__education {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.education-box {
+    background-color: rgb(33, 33, 33);
+    border-radius: 1rem;
+    width: fit-content;
+    min-width: 30%;
+    min-height: 18rem;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.school-container {
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
+    padding: 5px;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.school {
+    width: 110px;
+    height: 110px;
+}
+
+.education-box .section__text__p2 {
+    justify-content: center;
+    align-self: center;
+    margin: 0;
+    color: white;
+}
+
+.education-box .section__text__p2:first-child {
+    color: lightblue;
+    font-weight: 700;
+}
+
+.education-box .section__text__p1 {
+    color: lightgrey;
 }
