@@ -205,8 +205,7 @@ nav {
 
 
 .hero__pic-container:hover {
-    width: 450px;
-    height: 450px;
+    scale: 1.125;
 }
 
 .section__text {
@@ -309,6 +308,11 @@ nav {
     padding: 10px;
     background-color: white;
     border-radius: 100%;
+    transition: all 1s ease;
+}
+
+.pic-container__chibi-icon:hover {
+    scale: 1.125;
 }
 
 .chibi-img {
@@ -371,6 +375,7 @@ nav {
     flex-direction: column;
     padding-right: 5rem;
     padding-left: 5rem;
+    padding-bottom: 2rem;
 }
 
 .section__education {
@@ -386,11 +391,16 @@ nav {
     border-radius: 1rem;
     width: fit-content;
     min-width: 30%;
-    min-height: 18rem;
+    min-height: 20rem;
     display: flex;
-    padding: 1rem;
+    padding: 0.75rem;
     justify-content: space-around;
     flex-direction: column;
+    transition: all 1s ease;
+}
+
+.education-box:hover {
+    scale: 1.1;
 }
 
 .school-container {
@@ -425,4 +435,10 @@ nav {
 
 .education-box .section__text__p1 {
     color: lightgrey;
+}
+
+/* Skills section */
+
+#skill {
+    background-color: lightgrey;
 }
