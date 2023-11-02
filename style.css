@@ -292,7 +292,7 @@ nav {
 
 #about {
     background-color: cornflowerblue;
-    width: 100%;
+    width: 100vw;
     height: 101vh;
     color: white;
     display: flex;
@@ -441,4 +441,113 @@ nav {
 
 #skill {
     background-color: lightgrey;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 2rem;
+    margin: 0;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#skill .section-container{
+    display: flex;
+    row-gap: 3rem;
+    column-gap: 5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-box {
+    box-sizing: border-box;
+    width: auto;
+}
+
+.skill-list {
+    display: flex;
+}
+
+.skill-list .section__text__list {
+    color: black;
+}
+
+.skill-list .check-mark {
+    filter: invert(0);
+}
+
+.project-box {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 20rem;
+    padding: 1rem;
+    background-color: whitesmoke;
+    border-radius: 5%;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 1s ease;
+}
+
+.project-box:hover {
+    scale: 1.2;
+}
+
+.project-box .section__text__p2 {
+    width: 75%;
+    height: 20%;
+    border: lightgray 3px dashed;
+    padding: 2rem;
+    border-radius: 5%;
+    color: lightgrey;
+}
+
+.little-header, .little-text {
+    padding: 1rem;
+}
+
+/* contact section */
+
+#contact {
+    width: 100%;
+    height: fit-content;
+    background-color: dimgray;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+}
+
+#contact .section__text__list {
+    font-weight: 400;
+    font-size: 1.12rem;
+    margin-left: 1rem;
+}
+
+#contact a {
+    text-decoration: none;
+}
+
+#contact .section-container {
+    padding: 2rem;
+    display: flex;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.contact-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    filter: invert(100);
 }

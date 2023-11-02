@@ -1,10 +1,31 @@
 /* RESPONSIVE NAVBAR */
-
 @media screen and (max-width: 1200px) {
     #desktop-nav {
         display: none;
     }
     #hamburger-nav {
         display: flex;
+    }
+    #hero, #about, #education, #contact {
+        overflow: auto;
+        overflow-x: hidden;
+    }
+    section, .section-container {
+        height: fit-content;
+    }
+    #hero {
+        flex-direction: column;
+        gap: 0;
+        height: fit-content;
+        margin-bottom: 2rem;
+        padding: 0;
+    }
+    .hero__pic-container {
+        scale: 0.75;
+        align-self: center;
+    }
+    .profile-pic {
+        overflow: auto;
+        pointer-events: none;
     }
 }
