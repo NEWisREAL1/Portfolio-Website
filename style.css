@@ -10,6 +10,11 @@
     padding: 0;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 html {
     scroll-behavior: smooth;  
 }
@@ -131,6 +136,11 @@ nav {
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.menu-links li {
+    border-bottom: grey 1px solid;
 }
 
 .menu-links a {
@@ -141,9 +151,6 @@ nav {
     color: black;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
-    text-decoration: underline;
-    text-underline-offset: 15px;
-    text-decoration-thickness: 1px;
 }
 
 .menu-links li {
@@ -206,6 +213,24 @@ nav {
 
 .hero__pic-container:hover {
     scale: 1.125;
+}
+
+.hero__pic-container-mobile {
+    display: none;
+    height: 16rem;
+    width: 16rem;
+    align-self: center;
+    margin: 2.5rem 0;
+    padding: 20px;
+    border: cornflowerblue 5px;
+    border-style: dotted;
+    border-radius: 100%;
+    transition: all 0.5s ease-out;
+    /* animation: profile-border 10s linear infinite; */
+}
+
+.hero__pic-container-mobile:hover {
+    scale: 1.15;
 }
 
 .section__text {
@@ -463,6 +488,10 @@ nav {
     width: auto;
 }
 
+.skill-box .section__text__p2 {
+    text-align: start;
+}
+
 .skill-list {
     display: flex;
 }
@@ -489,6 +518,14 @@ nav {
     transition: all 1s ease;
 }
 
+.project-wrap {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    column-gap: 5rem;
+}
+
 .project-box:hover {
     scale: 1.2;
 }
@@ -500,6 +537,7 @@ nav {
     padding: 2rem;
     border-radius: 5%;
     color: lightgrey;
+    text-align: center;
 }
 
 .little-header, .little-text {

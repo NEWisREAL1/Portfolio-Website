@@ -1,4 +1,26 @@
 /* RESPONSIVE NAVBAR */
+
+@media screen and (max-width: 1000px) {
+    .section-container {
+        padding: 1rem;
+    }
+    .project-wrap {
+        flex-direction: column;
+        row-gap: 2.5rem;
+    }
+    .project-box {
+        width: 100%;
+    }
+    .project-box .section__text__p2 {
+        height: fit-content;
+        width: 80%;
+    }
+    #skill .section-container {
+        flex-direction: column;
+        justify-content: start;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     #desktop-nav {
         display: none;
@@ -12,20 +34,95 @@
     }
     section, .section-container {
         height: fit-content;
+        overflow-x: hidden;
+        flex-direction: column;
+        align-items: center;
     }
-    #hero {
+    #hero, #about, #education, #skill, #contact {
+        align-items: center;
         flex-direction: column;
         gap: 0;
         height: fit-content;
         margin-bottom: 2rem;
         padding: 0;
     }
+    #skill, #contact {
+        margin-bottom: 0;
+    }
     .hero__pic-container {
-        scale: 0.75;
+        display: none;
+    }
+    .hero__pic-container-mobile {
+        display: flex;
+    }
+    .profile-pic, .chibi-img {
+        overflow: auto;
+    }
+    .logo {
+        letter-spacing: 0.1;
+        font-size: 1.05rem;
+        font-weight: 500;
+    }
+    .pic-container__chibi-icon {
+        margin-top: 2rem;
+        margin-bottom: 0.25rem;
+    }
+    .about-detail-container {
+        padding: 1rem 10rem;
+    }
+    #education .wrapper {
+        width: 100%;
+    }
+    .section__education {
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+        width: auto;
+    }
+    .education-box {
+        box-sizing: border-box;
+        align-self: center;
+        width: 90%;
+    }
+    #skill .section-container {
+        padding: 1rem 5rem;
+        padding-bottom: 4rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: start;
+    }
+    .project-box {
+        width: 80vw;
+        height: fit-content;
         align-self: center;
     }
-    .profile-pic {
-        overflow: auto;
-        pointer-events: none;
+    .project-wrap {
+        row-gap: 2rem;
+        column-gap: 4rem;
+    }
+    .project-box .section__text__p2 {
+        height: fit-content;
+    }
+    #contact .section-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: start;
+        padding: 1rem 2rem;
+    }
+    .contact-link {
+        width: auto;
+        justify-content: start;
+    }
+    .contact-link .mail-text {
+        word-wrap: break-word;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 80%;
+        row-gap: 1rem;
+    }
+    hr {
+        margin: 0 1rem;
     }
 }
+
