@@ -555,7 +555,7 @@ nav {
     flex-direction: column;
     padding-right: 5rem;
     padding-left: 5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0;
 }
 
 #contact .section__text__list {
@@ -588,4 +588,10 @@ nav {
     width: 2.5rem;
     height: 2.5rem;
     filter: invert(100);
+}
+
+.contact-link .mail-text {
+    display: flex;
+    flex-direction: row;
+    row-gap: 0;
 }
